@@ -6,7 +6,7 @@ I am Jay Matt Santos, a second-year Bachelor of Science in Information Technolog
 
 ## 🌐 Live Website
 
-[View My Portfolio](https://1mthematt.github.io/My-Personal-portfolio/)
+[View My Portfolio](https://1mthematt.github.io/-Code-With-Matt/)
 
 ## 📌 About the Project
 
