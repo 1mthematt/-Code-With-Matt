@@ -8,7 +8,6 @@
 :root,
 html[data-theme="light"] {
     color-scheme: light;
-
     --bg: #eeeeec;
     --surface: #e4e4e1;
     --surface-strong: #d8d8d4;
@@ -23,7 +22,6 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
     color-scheme: dark;
-
     --bg: #111111;
     --surface: #1b1b1b;
     --surface-strong: #252525;
@@ -318,7 +316,12 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: grayscale(100%);
+    filter: none;
+    transition: transform 0.4s ease;
+}
+
+.portrait-frame:hover img {
+    transform: scale(1.04);
 }
 
 .orbit {
@@ -413,10 +416,6 @@ img {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
     letter-spacing: 2px;
-}
-
-.intro-band b {
-    margin: 0 18px;
 }
 
 
@@ -522,7 +521,6 @@ img {
     gap: 15px;
     padding: 22px 0;
     border-top: 1px solid var(--line);
-    position: relative;
 }
 
 .skill-no,
@@ -918,7 +916,7 @@ img {
 }
 
 
-/* RESPONSIVE TABLET */
+/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -968,7 +966,7 @@ img {
 }
 
 
-/* RESPONSIVE MOBILE */
+/* MOBILE */
 
 @media (max-width: 680px) {
 
