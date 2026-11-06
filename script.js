@@ -7,9 +7,7 @@ const themeLabel = document.getElementById("themeLabel");
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 
-
-// THEME SWITCH
-
+// THEME SWITCHER
 themeToggle.addEventListener("click", () => {
 
     const nextTheme =
@@ -29,17 +27,12 @@ themeToggle.addEventListener("click", () => {
 
 });
 
-
 // MOBILE NAVIGATION
-
 menuToggle.addEventListener("click", () => {
 
     const isOpen = mainNav.classList.toggle("open");
 
-    menuToggle.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-    );
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
 
     menuToggle.setAttribute(
         "aria-label",
@@ -48,24 +41,16 @@ menuToggle.addEventListener("click", () => {
 
 });
 
-
 // CLOSE MENU AFTER CLICKING A LINK
-
 mainNav.querySelectorAll("a").forEach(link => {
 
     link.addEventListener("click", () => {
 
         mainNav.classList.remove("open");
 
-        menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
+        menuToggle.setAttribute("aria-expanded", "false");
 
-        menuToggle.setAttribute(
-            "aria-label",
-            "Open navigation"
-        );
+        menuToggle.setAttribute("aria-label", "Open navigation");
 
     });
 
